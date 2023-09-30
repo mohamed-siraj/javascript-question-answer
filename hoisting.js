@@ -49,3 +49,19 @@ function fn(){
 /**
  * this is working perfectly. 
  */
+
+ /**
+  * but when we declare an function that time this rule break
+  * 
+  * example
+  */
+
+ exFn();
+
+ const exFn = function() {
+    console.log('this is anonymous function');
+ };
+
+ /**
+ * we got error : Cannot access 'exFn' before initialization
+ */
